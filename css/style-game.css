@@ -146,6 +146,14 @@
     animation: aviao-animation 7s linear;
 }
 
+/* TECLA UP */
+
+.tecla_up {
+    position: absolute;
+    width: 0%;
+    bottom: 35%;
+    left: 45%;
+}
 
 
 /* ANIMAÇÃO = PC */
@@ -192,4 +200,67 @@
     } to {
         left: 120%;
     }
+}
+
+
+/*LAYOUT TABLET 845*/
+@media screen and (max-width: 885px) {
+
+    /* TECLA UP */
+    .tecla_up {
+        position: absolute;
+        width: 10%;
+        bottom: 35%;
+        left: 45%;
+    }
+}
+
+
+/*LAYOUT TABLET 762px*/
+
+@media screen and (max-width: 429px) {
+
+    /* TECLA UP */
+    .tecla_up {
+        position: absolute;
+        width: 20%;
+        bottom: 10%;
+        left: 40%;
+    }
+
+    /* NUVEM */
+    .clouds {
+        width: 350px;
+        position: absolute;
+        animation: clouds-animation 20s infinite linear;
+    }
+
+    /* OBSTACULO = PC */
+    .pipe {
+        animation: pipe-animation 1.3s infinite linear;
+    }
+    
+    /* ANIMAÇÃO = PULO */
+    @keyframes jump {
+        0% {
+            bottom: 0;
+        } 30% {
+            bottom: 180px;
+        } 35% {
+            bottom: 180px;
+        } 40% {
+            bottom: 180px;
+        } 50% {
+            bottom: 180px;
+        } 60% {
+            bottom: 180px;
+        } 65% {
+            bottom: 180px;
+        } 70% {
+            bottom: 180px;
+        } 100% {
+            bottom: 0;
+        }
+    }
+
 }
