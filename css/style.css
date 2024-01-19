@@ -230,4 +230,80 @@
   .action:hover{
     background-color: #fff237;
   }
-  
+
+/*LAYOUT TABLET 845*/
+@media screen and (max-width: 885px) {
+  .div-logo {
+    width: 50%;
+    height: 20%;
+    padding-top: 50px;
+  }
+
+  .buttonn {
+    height: 10%;
+  }
+
+  .buttonn-div-03 {
+    padding-left: 45%;
+    padding-top: 80px;
+  }
+
+}
+
+/*LAYOUT TABLET 429px*/
+
+@media screen and (max-width: 429px) {
+
+  .div-logo {
+    width: 80%;
+    height: 20%;
+    padding-top: 100px;
+  }
+
+  .buttonn {
+    height: 40%;
+    width: 80%;
+  }
+
+  .p-barra-loja-01 {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 10px;
+  }
+
+  .card {
+    height: 281px;
+  }
+
+  .div-card-loja {
+    height: 351px;
+  }
+
+  .buttonn-div-03 {
+    padding-left: 30%;
+    padding-top: 37px;
+  }
+
+}
+
+/*LAYOUT TABLET 391px*/
+@media screen and (max-width: 391px) {
+  .button {
+    --fs-size: 2em;
+  }
+
+  .div-card-loja {
+    height: 320px;
+  }
+
+  .card {
+    height: 250px;
+  }
+
+  .info {
+    padding: 0px;
+    padding-top: 15px;
+  }
+
+}
