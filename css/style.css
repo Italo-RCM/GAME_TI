@@ -1,0 +1,233 @@
+/* ------------------- GERAL ------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #206a8893);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-logo {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff237; */
+}
+
+.logo-ti {
+    width: 80%;
+    /* position: absolute; */
+}
+
+/* ------------------- BUTTON ------------------- */
+
+/* === removing default button style ===*/
+.buttonn {
+    width: 50%;
+    height: 30%;
+    display: flex;
+    /* background-color: rgb(0, 255, 85); */
+}
+
+/* #buttonn-01, #buttonn-02, .buttonn, .buttonn-div-01, .buttonn-div-02 {
+    display: block;
+} */
+
+.buttonn-div-01 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(255, 0, 0); */
+}
+
+.buttonn-div-02 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: rgb(119, 0, 255); */
+}
+
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(0, 0, 0, 0.6);
+    --animation-color: #fff237;
+    --fs-size: 2.5em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    /* color: transparent; */
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+  /* ------------------- LOJA ------------------- */
+  .div-loja {
+    display: none;
+    width: 100%;
+    height: 100px;
+    /* background-color: bisque; */
+  }
+
+  .barra-loja-01 {
+    padding-left: 35%;
+    padding-top: 30px;
+    /* background-color: #fff237; */
+    /* display: flex; */
+  }
+
+  .p-barra-loja-01 {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .buttonn-div-03 {
+    padding-left: 48%;
+  }
+/* ------------------- CARD LOJA ------------------- */
+.div-card-loja {
+    width: 100%;
+    height: 430px;
+    overflow:auto;;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
+    flex-wrap: nowrap;
+    align-items: center;
+    /* background-color: rgb(13, 194, 25); */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #285d754d;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #eaee0000;
+}
+::-webkit-scrollbar-thumb {
+    background: #285d75;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.75rem;
+    background-color: white;
+    width: 175;
+    height: 320px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),
+    0 2px 4px -2px rgba(0,0,0,.1);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .header {
+    position: relative;
+    background-clip: border-box;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 0.75rem;
+    background-color: rgb(33 150 243);
+    box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+    height: 14rem;
+  }
+  
+  .info {
+    border: none;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .title {
+    color: rgb(38 50 56);
+    letter-spacing: 0;
+    line-height: 1.375;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer {
+    padding: 0.75rem;
+    /* border: 1px solid rgb(236 239 241); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgba(0, 140, 255, 0.082); */
+  }
+
+  .img-div-card-loja {
+    width: 60%;
+    margin-right: 50px;
+  }
+  
+  .action {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 6px -1px rgba(33,150,243,.4),0 2px 4px -2px rgba(33,150,243,.4);
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #c9c9c9;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .action:hover{
+    background-color: #fff237;
+  }
+  

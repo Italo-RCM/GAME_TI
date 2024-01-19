@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./css/style-game.css">
+        <script src="./js/script-game.js" defer></script>
+
+        <title>GAME T.I</title>
+    </head>
+    <body>
+
+        <!-- --------------------------------------- PEGANDO VALOR PASSADO POR URL ----------------------------------------- -->
+        <script>
+            
+            local = window.location.href;
+            var id_jogadorr = local.split("=").pop();
+        
+        </script>
+        <!-- --------------------------------------- ----------------------------- ----------------------------------------- -->
+
+        <div id="minha-div"></div>
+
+        <div class="game-board">
+            
+            <div class="card">
+                
+                <div class="notificationCard">
+                    <p class="notificationHeading">GAME HOVER</p>
+                    <!-- <svg class="bellIcon" viewBox="0 0 448 512"><path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"></path></svg> -->
+                    <img src="./images/DUDU/DUDU_perfil_animated_GIF.gif" class="jogador_card" style="width: 70%;" >
+                    <p class="notificationPara">Vai continuar perdendo tempo nesse jogo?</p>
+                    <div class="buttonContainer">
+                      <button id="button-card-01" class="AllowBtn" onclick="window.location.href='game.html?id_jogador='+id_jogadorr;">REINICIAR</button>
+                      <button id="button-card-02" class="NotnowBtn" onclick="window.location='index.html';">SAIR</button>
+                    </div>
+                  </div>
+    
+            </div>
+
+            <img src="./images/clouds.png" class="clouds">
+            <img src="./images/PC_animated_GIF.gif" class="pipe">
+            <img src="./images/DUDU/DUDU.gif" class="jogador">
+            <img src="./images/aviao.gif" class="aviao">
+
+            <script> 
+                //    --------------------------------------- ALTERANDO VALOR IMG DO JOGADOR -----------------------------------------
+                if(id_jogadorr == 1) {
+                    const jogador = document.querySelector('.jogador');
+                    jogador.src="./images/DUDU/DUDU.gif";
+
+                    const jogador_CARD = document.querySelector('.jogador_card');
+                    jogador_CARD.src="./images/DUDU/DUDU_perfil_animated_GIF.gif";
+    
+                } else if (id_jogadorr == 2) {
+                    const jogador = document.querySelector('.jogador');
+                    jogador.src="./images/FELIPE/FELIPE_animated_GIF.gif";
+
+                    const jogador_CARD = document.querySelector('.jogador_card');
+                    jogador_CARD.src="./images/FELIPE/FELIPE_perfil_animated_GIF.gif";
+    
+                } else if (id_jogadorr == 3) {
+                    const jogador = document.querySelector('.jogador');
+                    jogador.src="./images/JOSE/JOSE_animated_GIF.gif";
+
+                    const jogador_CARD = document.querySelector('.jogador_card');
+                    jogador_CARD.src="./images/JOSE/JOSE_perfil_animated_GIF.gif";
+    
+                } else if (id_jogadorr == 4) {
+                    const jogador = document.querySelector('.jogador');
+                    jogador.src="./images/RICARDO/RICARDO_animated_GIF.gif";
+
+                    const jogador_CARD = document.querySelector('.jogador_card');
+                    jogador_CARD.src="./images/RICARDO/RICARDO_perfil_animated_GIF.gif";
+    
+                } else if (id_jogadorr == 5) {
+                    const jogador = document.querySelector('.jogador');
+                    jogador.src="./images/CHOI/CHOI_animated_GIF.gif";
+
+                    const jogador_CARD = document.querySelector('.jogador_card');
+                    jogador_CARD.src="./images/CHOI/CHOI_perfil_animated_GIF.gif";
+    
+                } else if (id_jogadorr == 6) {
+                    const jogador = document.querySelector('.jogador');
+                    jogador.src="./images/ITALO/ITALO_animated_GIF.gif";
+
+                    const jogador_CARD = document.querySelector('.jogador_card');
+                    jogador_CARD.src="./images/ITALO/ITALO_perfil_animated_GIF.gif";
+    
+                } else if (id_jogadorr == 7) {
+                    const jogador = document.querySelector('.jogador');
+                    jogador.src="./images/FERNANDO/FERNANDO_animated_GIF.gif";
+
+                    const jogador_CARD = document.querySelector('.jogador_card');
+                    jogador_CARD.src="./images/FERNANDO/FERNANDO_perfil_animated_GIF.gif";
+    
+                } else if (id_jogadorr == 8) {
+                    const jogador = document.querySelector('.jogador');
+                    jogador.src="./images/BRUNO/BRUNO_animated_GIF.gif";
+
+                    const jogador_CARD = document.querySelector('.jogador_card');
+                    jogador_CARD.src="./images/BRUNO/BRUNO_perfil_animated_GIF.gif";
+    
+                }
+    
+            </script>
+
+        </div>
+
+    </body>
+</html>
