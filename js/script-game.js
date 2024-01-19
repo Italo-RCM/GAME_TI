@@ -40,6 +40,9 @@ const aviao = document.querySelector('.aviao');
 /* CARD */
 const card = document.querySelector('.card');
 
+/* CARD */
+const teclaUP = document.querySelector('.tecla_up');
+
 /* -------------------- ADICIONANDO PULO -------------------- */
 const jump = () => {
     jogador.classList.add('jump');
@@ -114,37 +117,21 @@ const loop = setInterval(() => {
         
         /* ALTERANDO GIF JOGADOR NO GAMER HOVER */
         if(id_jogadorr == 1) {
-            // const jogador_CARD = document.querySelector('.jogador_card');
             jogador.src="./images/DUDU/DUDU_GAME-HOVER.gif";
-
         } else if (id_jogadorr == 2) {
-            // const jogador_CARD = document.querySelector('.jogador_card');
             jogador.src="./images/FELIPE/FELIPE_GAME-HOVER_animated_GIF.gif";
-
         } else if (id_jogadorr == 3) {
-            // const jogador_CARD = document.querySelector('.jogador_card');
             jogador.src="./images/JOSE/JOSE_GAME-HOVER_animated_GIF.gif";
-
         } else if (id_jogadorr == 4) {
-            // const jogador_CARD = document.querySelector('.jogador_card');
             jogador.src="./images/RICARDO/RICARDO_GAME-HOVER_animated_GIF.gif";
-
         } else if (id_jogadorr == 5) {
-            // const jogador_CARD = document.querySelector('.jogador_card');
             jogador.src="./images/CHOI/CHOI_GAME-HOVER_animated_GIF.gif";
-
         } else if (id_jogadorr == 6) {
-            // const jogador_CARD = document.querySelector('.jogador_card');
             jogador.src="./images/ITALO/ITALO_GAME-HOVER_animated_GIF.gif";
-
         } else if (id_jogadorr == 7) {
-            // const jogador_CARD = document.querySelector('.jogador_card');
             jogador.src="./images/FERNANDO/FERNANDO_GAME-HOVER_animated_GIF.gif";
-
         } else if (id_jogadorr == 8) {
-            // const jogador_CARD = document.querySelector('.jogador_card');
             jogador.src="./images/BRUNO/BRUNO_GAME-HOVER_animated_GIF.gif";
-
         }
 
         /* ADICIONANDO CARD */
@@ -159,3 +146,5 @@ const loop = setInterval(() => {
 
 /* ADICIONANDO QUALQUER TECLA PARA PULAR */
 document.addEventListener('keydown', jump);
+
+document.addEventListener('click', jump);
